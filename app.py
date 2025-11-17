@@ -136,6 +136,7 @@ with gr.Blocks(title="Waste Sorter AI") as demo:
         postprocess=False
     )
 
-    demo.launch(server_name="0.0.0.0", server_port=10000)
+# Render must use port 8080
+demo.launch(server_name="0.0.0.0", server_port=8080)
 
 app = demo
